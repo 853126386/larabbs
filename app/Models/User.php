@@ -3,12 +3,18 @@
 namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
+use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;
 class User extends Authenticatable
 {
-    use Notifiable;
+    /**
+     * 加载使用 MustVerifyEmail trait，打开 vendor/laravel/framework/src/Illuminate/Auth/MustVerifyEmail.php 文件，可以看到以下三个方法：
+     * hasVerifiedEmail() 检测用户 Email 是否已认证；
+     * markEmailAsVerified() 将用户标示为已认证；
+     * sendEmailVerificationNotification() 发送 Email 认证的消息通知，触发邮件的发送。
+     */
+    use Notifiable,MustVerifyEmailTrait;
 
     /**
      * The attributes that are mass assignable.
