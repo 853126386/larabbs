@@ -128,6 +128,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\WWW\larabbs\app" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -164,7 +169,7 @@
       <workItem from="1581308094241" duration="742000" />
       <workItem from="1581313606619" duration="5589000" />
       <workItem from="1581393770936" duration="11290000" />
-      <workItem from="1581457427816" duration="2796000" />
+      <workItem from="1581457427816" duration="4117000" />
     </task>
     <servers />
   </component>
@@ -172,10 +177,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="776" y="443" key="NewPhpFileDialog" timestamp="1581458127097">
+    <state x="776" y="443" key="NewPhpFileDialog" timestamp="1581460865748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="776" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581458127097" />
+    <state x="776" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581460865748" />
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581313619646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
