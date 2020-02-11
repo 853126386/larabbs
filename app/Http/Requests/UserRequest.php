@@ -31,7 +31,7 @@ class UserRequest extends FormRequest
             'name' => 'required|between:3,25|regex:/^[A-Za-z0-9\-\_]+$/|unique:users,name,' . Auth::id(),
             'email'=>'required|email',
             'introduction'=>'max:80',
-            'avatar'=>'mimes:jpeg,jpg,bmp,gif,png,gif|dimensions:min_width=208,min_height=208',
+            'avatar'=>'mimes:jpeg,jpg,bmp,gif,png,gif|dimensions:min_width=208,min_height=208',  //mimes验证后缀名，dimensions验证图片清晰度
         ];
     }
 
