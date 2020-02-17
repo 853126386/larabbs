@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
 
+/**
+ * 帖子控制器
+ * Class TopicsController
+ * @package App\Http\Controllers
+ */
 class TopicsController extends Controller
 {
     public function __construct()
@@ -14,12 +19,21 @@ class TopicsController extends Controller
         $this->middleware('auth', ['except' => ['index', 'show']]);
     }
 
+    /**
+     * 帖子列表
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
 	public function index()
 	{
-		$topics = Topic::with('user','category')->paginate(30);
+		$topics = Topic::with('user','category')->paginate(10);//使用预加载找出列表数据
 		return view('topics.index', compact('topics'));
 	}
 
+    /**
+     * 帖子详情
+     * @param Topic $topic
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function show(Topic $topic)
     {
         return view('topics.show', compact('topic'));

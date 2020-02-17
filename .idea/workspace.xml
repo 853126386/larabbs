@@ -110,6 +110,7 @@
       <path value="$PROJECT_DIR$/vendor/summerblue/generator" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/hieu-le/active" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XVrmteaHXuH6G919mQHNvqMzIG" />
@@ -177,7 +178,7 @@
       <workItem from="1581646461441" duration="1383000" />
       <workItem from="1581745687996" duration="597000" />
       <workItem from="1581858184832" duration="7000" />
-      <workItem from="1581910570255" duration="2041000" />
+      <workItem from="1581910570255" duration="5515000" />
     </task>
     <servers />
   </component>
@@ -197,9 +198,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581462376998" />
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1581462381523">
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1581914052002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581462381523" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581914052002" />
   </component>
 </project>
