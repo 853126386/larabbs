@@ -108,6 +108,8 @@
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/summerblue/generator" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XVrmteaHXuH6G919mQHNvqMzIG" />
@@ -175,7 +177,7 @@
       <workItem from="1581646461441" duration="1383000" />
       <workItem from="1581745687996" duration="597000" />
       <workItem from="1581858184832" duration="7000" />
-      <workItem from="1581910570255" duration="1165000" />
+      <workItem from="1581910570255" duration="2041000" />
     </task>
     <servers />
   </component>
