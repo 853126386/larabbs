@@ -123,7 +123,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../edu.job73" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -178,7 +178,9 @@
       <workItem from="1581646461441" duration="1383000" />
       <workItem from="1581745687996" duration="597000" />
       <workItem from="1581858184832" duration="7000" />
-      <workItem from="1581910570255" duration="5515000" />
+      <workItem from="1581910570255" duration="7385000" />
+      <workItem from="1581944212307" duration="599000" />
+      <workItem from="1582009900386" duration="2471000" />
     </task>
     <servers />
   </component>
@@ -186,14 +188,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1581928168068">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581928168068" />
     <state x="776" y="443" key="NewPhpFileDialog" timestamp="1581910951870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581910951870" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1581313619646">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1582014742305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581313619646" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582014742305" />
     <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1581462376998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

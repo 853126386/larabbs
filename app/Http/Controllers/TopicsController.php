@@ -23,9 +23,11 @@ class TopicsController extends Controller
      * 帖子列表
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-	public function index()
+	public function index(Request $request)
 	{
-		$topics = Topic::with('user','category')->paginate(10);//使用预加载找出列表数据
+
+//		$topics = Topic::with('user','category')->paginate(10);//使用预加载找出列表数据
+		$topics = Topic::withOrder($request->order)->paginate(10);//使用预加载找出列表数据
 		return view('topics.index', compact('topics'));
 	}
 
