@@ -123,7 +123,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../edu.job73" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/editor/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -133,6 +133,10 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\WWW\larabbs\resources\editor\js" />
+      <recent name="F:\WWW\larabbs\resources\editor\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\WWW\larabbs\app" />
     </key>
@@ -182,7 +186,7 @@
       <workItem from="1581944212307" duration="599000" />
       <workItem from="1582009900386" duration="5166000" />
       <workItem from="1582022592542" duration="1851000" />
-      <workItem from="1582089725640" duration="3892000" />
+      <workItem from="1582089725640" duration="4708000" />
     </task>
     <servers />
   </component>
