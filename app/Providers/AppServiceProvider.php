@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Reply;
+use App\Observers\ReplyObserver;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Topic;
 use App\Observers\TopicObserver;
@@ -26,5 +28,6 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Topic::observe(TopicObserver::class);
+        Reply::observe(ReplyObserver::class);
     }
 }
