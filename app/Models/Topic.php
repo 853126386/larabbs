@@ -53,13 +53,28 @@ class Topic extends Model
     }
 
 
+    /**
+     * 分类关联模型
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function category(){
         return $this->belongsTo(Category::class,'category_id','id');
     }
+
+    /**用户关联模型
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function user(){
         return $this->belongsTo(User::class,'user_id','id');
     }
 
-
+    /**
+     * 回复关联模型
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
 
 }

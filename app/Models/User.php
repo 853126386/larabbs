@@ -47,6 +47,10 @@ class User extends Authenticatable implements MustVerifyEmailContract
     public function topics(){
         return $this->hasMany(Topic::class);
     }
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
 
     /**
      * 判断模型user_id是否跟本模型id一样
