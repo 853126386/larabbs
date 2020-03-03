@@ -7,6 +7,7 @@ use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;
 use App\Models\Topic;
+use Spatie\Permission\Traits\HasRoles;
 use Auth;
 class User extends Authenticatable implements MustVerifyEmailContract
 {
@@ -16,7 +17,7 @@ class User extends Authenticatable implements MustVerifyEmailContract
      * markEmailAsVerified() 将用户标示为已认证；
      * sendEmailVerificationNotification() 发送 Email 认证的消息通知，触发邮件的发送。
      */
-    use MustVerifyEmailTrait;
+    use MustVerifyEmailTrait,HasRoles;
 
     use Notifiable {
         notify as protected laravelNotify;
