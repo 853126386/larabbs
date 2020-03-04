@@ -119,6 +119,9 @@
       <path value="$PROJECT_DIR$/vendor/laravel/horizon" />
       <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/viacreative/sudo-su" />
+      <path value="$PROJECT_DIR$/vendor/ckeditor/ckeditor" />
+      <path value="$PROJECT_DIR$/vendor/summerblue/administrator" />
     </include_path>
   </component>
   <component name="ProjectId" id="1XVrmteaHXuH6G919mQHNvqMzIG" />
@@ -201,7 +204,8 @@
       <workItem from="1582436518627" duration="3812000" />
       <workItem from="1582519292909" duration="6328000" />
       <workItem from="1582624948375" duration="1201000" />
-      <workItem from="1583220531692" duration="1889000" />
+      <workItem from="1583220531692" duration="8930000" />
+      <workItem from="1583301673884" duration="456000" />
     </task>
     <servers />
   </component>
