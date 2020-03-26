@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="af46a56b-782a-4735-9338-4921b143705f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Traits/ActiveUserHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Traits/ActiveUserHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ReplysTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ReplysTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/TopicsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/TopicsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topics/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +216,7 @@
       <workItem from="1584065411074" duration="5821000" />
       <workItem from="1584322495301" duration="599000" />
       <workItem from="1584408839065" duration="689000" />
-      <workItem from="1585194666290" duration="10320000" />
+      <workItem from="1585194666290" duration="11032000" />
     </task>
     <servers />
   </component>
