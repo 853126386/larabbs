@@ -24,6 +24,7 @@ trait ActiveUserHelper {
 
     public function getActiveUsers()
     {
+//        dd(Cache::get($this->cache_key));
         return Cache::remember($this->cache_key,$this->cache_expire_in_seconds,function (){
             $this->caclulateActiveUsers();
         });
@@ -38,8 +39,8 @@ trait ActiveUserHelper {
 
     private function caclulateActiveUsers()
     {
-        $this->cacluteTopicScore();
-        $this->cacluteReplyScore();
+        $this->calculateTopicScore();
+        $this->calculateReplyScore();
 
         //数组按照得分排序
         $users=Arr::sort($this->users,function($user){
@@ -70,7 +71,7 @@ trait ActiveUserHelper {
         //并且同事取出用户此段时间内发布话题的数量
 
         $topic_users=Topic::query()->select(DB::raw('user_id,count(*) as topic_count'))
-                                   ->where('create_at','>=',Carbon::now()->subDays($this->pass_day))
+                                   ->where('created_at','>=',Carbon::now()->subDays($this->pass_day))
                                    ->groupBy('user_id')
                                    ->get();
 
@@ -80,7 +81,7 @@ trait ActiveUserHelper {
         }
     }
 
-    private function calculateReplayScore(){
+    private function calculateReplyScore(){
 
         // 从回复数据表里取出限定时间范围（$pass_days）内，有发表过回复的用户
         // 并且同时取出用户此段时间内发布回复的数量
