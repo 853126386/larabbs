@@ -134,7 +134,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kk.xqzg100" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vip.job73" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -208,7 +208,10 @@
       <workItem from="1583301673884" duration="1377000" />
       <workItem from="1583389666839" duration="1246000" />
       <workItem from="1583561276762" duration="595000" />
-      <workItem from="1583648713154" duration="1840000" />
+      <workItem from="1583648713154" duration="2098000" />
+      <workItem from="1584189899515" duration="1674000" />
+      <workItem from="1584263001368" duration="29000" />
+      <workItem from="1585326684054" duration="657000" />
     </task>
     <servers />
   </component>
@@ -216,10 +219,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583391793745">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584263024728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583391793745" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584263024728" />
     <state x="776" y="443" key="NewPhpFileDialog" timestamp="1582442694898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
