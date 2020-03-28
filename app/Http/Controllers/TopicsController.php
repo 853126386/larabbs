@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Handlers\ImageUploadHandler;
 use App\Models\Category;
 use App\Models\Topic;
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
@@ -25,12 +26,15 @@ class TopicsController extends Controller
      * 帖子列表
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-	public function index(Request $request)
+	public function index(Request $request,User $user)
 	{
 
 //		$topics = Topic::with('user','category')->paginate(10);//使用预加载找出列表数据
 		$topics = Topic::withOrder($request->order)->paginate(10);//使用预加载找出列表数据
-		return view('topics.index', compact('topics'));
+        $active_users=$user->getActiveUsers();
+        $active_users=$active_users?$active_users:[];
+//        dd($active_users);
+		return view('topics.index', compact('topics','active_users'));
 	}
 
     /**

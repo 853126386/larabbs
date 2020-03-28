@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Traits\ActiveUserHelper;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -18,6 +19,7 @@ class User extends Authenticatable implements MustVerifyEmailContract
      * sendEmailVerificationNotification() 发送 Email 认证的消息通知，触发邮件的发送。
      */
     use MustVerifyEmailTrait,HasRoles;
+    use ActiveUserHelper;
 
     use Notifiable {
         notify as protected laravelNotify;

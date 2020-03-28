@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af46a56b-782a-4735-9338-4921b143705f" name="Default Changelist" comment="" />
+    <list default="true" id="af46a56b-782a-4735-9338-4921b143705f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +137,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../vip.job73" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> e5afa0c29ab5a654d4950026581c3d46134c5ba4
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -144,12 +151,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\WWW\larabbs\resources\editor\js" />
-      <recent name="F:\WWW\larabbs\resources\editor\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\WWW\larabbs\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WWW\larabbs" />
+      <recent name="F:\WWW\larabbs\resources\editor\js" />
+      <recent name="F:\WWW\larabbs\resources\editor\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -208,10 +216,18 @@
       <workItem from="1583301673884" duration="1377000" />
       <workItem from="1583389666839" duration="1246000" />
       <workItem from="1583561276762" duration="595000" />
+<<<<<<< HEAD
       <workItem from="1583648713154" duration="2098000" />
       <workItem from="1584189899515" duration="1674000" />
       <workItem from="1584263001368" duration="29000" />
       <workItem from="1585326684054" duration="657000" />
+=======
+      <workItem from="1583648713154" duration="1840000" />
+      <workItem from="1584065411074" duration="5821000" />
+      <workItem from="1584322495301" duration="599000" />
+      <workItem from="1584408839065" duration="689000" />
+      <workItem from="1585194666290" duration="11032000" />
+>>>>>>> e5afa0c29ab5a654d4950026581c3d46134c5ba4
     </task>
     <servers />
   </component>
@@ -219,7 +235,15 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584263024728">
+=======
+    <state x="712" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584066057625">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="712" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584066057625" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583391793745">
+>>>>>>> e5afa0c29ab5a654d4950026581c3d46134c5ba4
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584263024728" />
@@ -231,13 +255,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582014742305" />
-    <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1582442453543">
+    <state x="636" y="253" width="647" height="538" key="find.popup" timestamp="1585215273739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582442453543" />
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1581914052002">
+    <state x="636" y="253" width="647" height="538" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585215273739" />
+    <state x="616" y="235" key="run.anything.popup" timestamp="1585209641477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581914052002" />
+    <state x="616" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585209641477" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1585208248763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585208248763" />
   </component>
 </project>
