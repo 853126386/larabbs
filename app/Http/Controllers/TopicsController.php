@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Handlers\ImageUploadHandler;
 use App\Models\Category;
+use App\Models\Link;
 use App\Models\Topic;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -26,15 +27,16 @@ class TopicsController extends Controller
      * 帖子列表
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-	public function index(Request $request,User $user)
+	public function index(Request $request,User $user,Topic $topic, Link $link)
 	{
 
-//		$topics = Topic::with('user','category')->paginate(10);//使用预加载找出列表数据
-		$topics = Topic::withOrder($request->order)->paginate(10);//使用预加载找出列表数据
-        $active_users=$user->getActiveUsers();
-        $active_users=$active_users?$active_users:[];
-//        dd($active_users);
-		return view('topics.index', compact('topics','active_users'));
+        // 读取分类 ID 关联的话题，并按每 20 条分页
+        $topics = $topic->withOrder($request->order)
+            ->with('user', 'category')  // 预加载防止 N+1 问题
+            ->paginate(20);
+        $active_users = $user->getActiveUsers();
+        $links = $link->getAllCached();
+		return view('topics.index', compact('topics','active_users', 'links'));
 	}
 
     /**

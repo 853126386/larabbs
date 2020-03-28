@@ -25,7 +25,6 @@ class Topic extends Model
         }else{
             $query->recentReplied();
         }
-        $query->with('user','category');
         return $query;
     }
 

@@ -2,11 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\Reply;
-use App\Observers\ReplyObserver;
 use Illuminate\Support\ServiceProvider;
-use App\Models\Topic;
-use App\Observers\TopicObserver;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -29,8 +25,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
-        Topic::observe(TopicObserver::class);
-        Reply::observe(ReplyObserver::class);
+        \App\Models\User::observe(\App\Observers\UserObserver::class);
+        \App\Models\Reply::observe(\App\Observers\ReplyObserver::class);
+        \App\Models\Topic::observe(\App\Observers\TopicObserver::class);
+        \App\Models\Link::observe(\App\Observers\LinkObserver::class);
     }
 }
