@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 
 class VerificationCodesController extends Controller
 {
-    public function store()
-    {
-        return $this->response->array(['test_message' => 'store verification code']);
+
+
+    public function store(VerficationCodeoRequst $requst,EasySms $easySms){
+        $phone=$requst->phone;
+
+        $validated=$requst->validated();
+        return $this->response->array(['test_message'=>'test code']);
     }
 }
