@@ -10,4 +10,11 @@ $api->version('v1', [
     // 短信验证码
     $api->post('verificationCodes', 'VerificationCodesController@store')
         ->name('api.verificationCodes.store');
+
+    $api->get('test', 'test@show')
+        ->name('api.test.show');
 });
+
+
+
+
