@@ -21,13 +21,12 @@ class VerificationCodesController extends Controller
                 $message=$exception->getException('aliyun')->getMessage();
                 return $this->response->errorInternal($message?:'短信发送异常');
             }
-
         }
 
         $key='verificationCode_'.str_random(15);
         $expireAt=now()->addMinute(10);
 
-        \Cache::put($key,['phone'=>$phone,'code'=>$code],$expireAt);
+        \Cache::put($key,['phone'=>$phone,'code'=>"$code"],$expireAt);
 
         return $this->response->array([
            'key'=>$key,
