@@ -8,7 +8,16 @@ use Overtrue\EasySms\EasySms;
 class VerificationCodesController extends Controller
 {
     public function store(VerificationCodeRequest $requst,EasySms $easySms){
-        $phone=$requst->phone;
+        $captchaData=\Cache::get($requst->captcha_key);
+        if(!$captchaData){
+            return $this->response->error('图片验证码已过期',422);
+        }
+        if(!hash_equals($captchaData['code'],$requst->captcha_code)){
+            \Cache::forget($requst->captcha_key);
+            return $this->response->errorUnauthorized('图片验证码错误');
+        }
+
+        $phone=$captchaData['phone'];
         $code=str_pad(random_int(1,9999),4,0,STR_PAD_LEFT);
         if(!app()->environment('production')){
             $code=1234;
