@@ -28,6 +28,18 @@ $api->version('v1', [
 
         //第三方登入
         $api->post('socials/{socials_type}/authorizations','AuthorizationsController@socialStore')->name('api.socials.authorizations.store');
+
+
+        //登入
+        $api->post('authorizations','AuthorizationsController@store')->name('api.authorizations.store');
+
+
+        // 刷新token
+        $api->put('authorizations/current', 'AuthorizationsController@update')
+            ->name('api.authorizations.update');
+        // 删除token
+        $api->delete('authorizations/current', 'AuthorizationsController@destroy')
+            ->name('api.authorizations.destroy');
     });
 
 });
