@@ -57,8 +57,14 @@ $api->version('v1', [
             'middleware'=>'api.auth'
         ],function ($api){
 
-
+            //获取当前用户信息
             $api->get('user','UsersController@me')->name('api.user.show');
+
+            //图片资源
+            $api->post('images','ImagesController@store')->name('api.images.store');
+
+
+
         });
 
     });
