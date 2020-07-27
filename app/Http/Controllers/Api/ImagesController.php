@@ -8,7 +8,7 @@ namespace App\Http\Controllers\Api;
 use App\Handlers\ImageUploadHandler;
 use App\Http\Requests\Api\ImageRequest;
 use App\Models\Image;
-
+use App\Transformers\ImageTransformer;
 class ImagesController extends Controller
 {
     //

@@ -27,10 +27,9 @@ class ImageRequest extends FormRequest
             'type'=>'required|string|in:avatar,topic'
         ];
         if($this->type=='avatar'){
-
-            $rules['images']='required|mimes:jepg,png,jpg,gif|dimensions:min_width=200,min_height=200';
+            $rules['image'] = 'required|mimes:jpeg,bmp,png,gif|dimensions:min_width=200,min_height=200';
         }else{
-            $rules['images']='required|mimes:jepg,png,jpg,gif';
+            $rules['image']='required|mimes:jepg,png,jpg,gif';
         }
         return $rules;
     }
@@ -39,7 +38,7 @@ class ImageRequest extends FormRequest
     {
 
         return [
-          'images.dimensions'=>'图片不够清晰'
+          'image.dimensions'=>'图片不够清晰'
         ];
     }
 }
