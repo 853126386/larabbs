@@ -7,7 +7,7 @@ use App\Models\Reply;
 use League\Fractal\TransformerAbstract;
 class  ReplyTransformer extends TransformerAbstract{
 
-    protected  $availableIncludes=['user','reply'];
+    protected  $availableIncludes=['user','topic'];
 
 
     public function transform(Reply $reply)
@@ -22,13 +22,14 @@ class  ReplyTransformer extends TransformerAbstract{
         ];
     }
 
- /*   public function includeUser(reply $reply)
+     public function includeUser(reply $reply)
     {
         return $this->item($reply->user,new UserTransformer());
     }
+
     public function includeTopic(reply $reply)
     {
-        return $this->item($reply->Topic,new CategoryTransformer());
-    }*/
+        return $this->item($reply->topic,new TopicTransformer());
+    }
 
 }

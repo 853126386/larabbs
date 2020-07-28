@@ -14,6 +14,31 @@ class RepliesController extends Controller
 {
     //
 
+    public function index(Topic $topic, Request $request)
+    {
+        app(\Dingo\Api\Transformer\Factory::class)->disableEagerLoading();
+
+        $replies=$topic->replies()->paginate(20);
+
+        if ($request->include) {
+            $replies->load(explode(',', $request->include));
+        }
+        return $this->response->paginator($replies,new ReplyTransformer());
+    }
+
+    public function userIndex(User $user, Request $request)
+    {
+        app(\Dingo\Api\Transformer\Factory::class)->disableEagerLoading();
+
+        $replies = $user->replies()->paginate(20);
+
+        if ($request->include) {
+            $replies->load(explode(',', $request->include));
+        }
+
+        return $this->response->paginator($replies, new ReplyTransformer());
+    }
+
     public function store(ReplyRequest $request,Reply $reply,Topic $topic)
     {
         $reply->content=$request->content;
