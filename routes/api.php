@@ -53,6 +53,12 @@ $api->version('v1', [
         //游客可以访问
         $api->get('categories','CategoriesController@index')->name('api.categories.index');
 
+        // 游客可以访问的接口
+        $api->get('topics', 'TopicsController@index')->name('api.topics.index');
+
+
+        $api->get('users/{user}/topics', 'TopicsController@userIndex')
+            ->name('api.users.topics.index');
 
         //需要token才能访问
         $api->group([
@@ -79,6 +85,7 @@ $api->version('v1', [
             //删除话题
             $api->delete('topics/{topic}', 'TopicsController@destroy')
                 ->name('api.topics.destroy');
+
         });
 
     });
