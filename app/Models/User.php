@@ -11,7 +11,9 @@ use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;
 use App\Models\Topic;
 use Spatie\Permission\Traits\HasRoles;
 use Auth;
-class User extends Authenticatable implements MustVerifyEmailContract
+use Tymon\JWTAuth\Contracts\JWTSubject;
+
+class User extends Authenticatable implements MustVerifyEmailContract,JWTSubject
 {
     /**
      * 加载使用 MustVerifyEmail trait，打开 vendor/laravel/framework/src/Illuminate/Auth/MustVerifyEmail.php 文件，可以看到以下三个方法：
@@ -33,7 +35,7 @@ class User extends Authenticatable implements MustVerifyEmailContract
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','introduction','avatar',
+        'name', 'email', 'password','introduction','avatar','weixin_openid','weixin_unionid'
     ];
 
     /**
@@ -53,6 +55,16 @@ class User extends Authenticatable implements MustVerifyEmailContract
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
 
     /**
      * 重写父类方法
