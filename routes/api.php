@@ -58,10 +58,16 @@ $api->version('v1', [
 
         $api->get('topics/{topic}', 'TopicsController@show')->name('api.topics.show');
 
+        //用户话题列表
         $api->get('users/{user}/topics', 'TopicsController@userIndex')
             ->name('api.users.topics.index');
 
+        //回复列表
+        $api->get('topics/{topic}/replies','RepliesController@index')->name('api.topics.replies.index');
 
+        // 某个用户的回复列表
+        $api->get('users/{user}/replies', 'RepliesController@userIndex')
+            ->name('api.users.replies.index');
 
         //需要token才能访问
         $api->group([
@@ -89,6 +95,24 @@ $api->version('v1', [
             $api->delete('topics/{topic}', 'TopicsController@destroy')
                 ->name('api.topics.destroy');
 
+            //话题回复
+            $api->post('topic/{topic}/replies','RepliesController@store') ->name('api.topics.replies.store');
+
+            //删除回复
+            $api->delete('topics/{topic}/replies/{reply}', 'RepliesController@destroy')
+                ->name('api.topics.replies.destroy');
+
+            //消息通知列表
+            $api->get('user/notifications', 'NotificationsController@index')
+                ->name('api.user.notifications.index');
+
+            // 通知统计
+            $api->get('user/notifications/stats', 'NotificationsController@stats')
+                ->name('api.user.notifications.stats');
+
+            // 标记消息通知为已读
+            $api->patch('user/read/notifications', 'NotificationsController@read')
+                ->name('api.user.notifications.read');
         });
 
     });
