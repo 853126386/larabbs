@@ -56,6 +56,7 @@ $api->version('v1', [
         // 游客可以访问的接口
         $api->get('topics', 'TopicsController@index')->name('api.topics.index');
 
+        //话题详情
         $api->get('topics/{topic}', 'TopicsController@show')->name('api.topics.show');
 
         //用户话题列表
@@ -113,6 +114,9 @@ $api->version('v1', [
             // 标记消息通知为已读
             $api->patch('user/read/notifications', 'NotificationsController@read')
                 ->name('api.user.notifications.read');
+
+            //当前登入用户权限
+            $api->get('user/permissions','PermissionsController@index')->name('api.user.permission.index');
         });
 
     });
