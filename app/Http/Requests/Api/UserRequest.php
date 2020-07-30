@@ -39,6 +39,7 @@ class UserRequest extends FormRequest
                     'name' => 'between:3,25|regex:/^[A-Za-z0-9\-\_]+$/|unique:users,name,' .$userId,
                     'email'=>'email|unique:users,email,'.$userId,
                     'introduction' => 'max:80',
+//                    'registration_id' => 'string',
                     'avatar_image_id' => 'exists:images,id,type,avatar,user_id,'.$userId
                 ];
                 break;
